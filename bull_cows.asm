@@ -11,7 +11,7 @@
       msgBoard  DB  'Bulls: ',9,'Cows: ',9,'Guesses:',10,13,0
       msgGuess  DB  'Guess the 4 digit sequence',10,10,13,0
       msgWin    DB  'You win!',10,10,13,0
-      msgLoose  DB  'You LOOSE!',10,10,13,0
+      msgLoose  DB  'You LOSE!',10,10,13,0
       done      DB  'Done.',10,13,0
       new_line  DB  10,13,0
       secrete   DB  5 dup(0)
@@ -59,7 +59,7 @@
     @@sigue:
         jmp @@sigue
         
-        ret                        ; nunca se llega aquí
+        ret                        ; nunca se llega aquÃ­
         endp
 
             
